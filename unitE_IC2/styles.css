@@ -14,9 +14,14 @@ article, aside, body, div, footer, header, h1, h2, p {
    margin: 0;
 }
 
+html {
+   font-size: 14px;
+}
+
 /* body and page container */
 body {
    background-color: ivory;
+   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
    max-width: 640px;
@@ -31,6 +36,17 @@ body {
 header {
    padding: 0.5em;
    text-align: center;
+   background-color: rgb(140,198,63);
+}
+
+h1 {
+   font-size: 2em;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-shadow: 0 0 10px ivory;
+}
+
+header p {
+   font-style: italic;
 }
 
 /* main content */
@@ -44,21 +60,33 @@ article p {
    margin-bottom: 1em;
 }
 
+p {
+   font-size: 1.2em;
+}
+
+article p.firstparagraph::first-line {
+   font-weight: bold;
+}
+
 /* sidebar */
 aside {
    padding: 2%;
    width: 35%;
    position: relative;
    left: 61%;
+   background-color: #c8f098;
 }
 aside h2 {
    margin: 0 0 0.4em;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.6em;
 }
 aside p {
    margin: 0 0 1em 1em;
 }
 aside p.accent {
    margin: 0;
+   font-weight: bold;
 }
 
 /* footer section */
@@ -68,4 +96,8 @@ footer {
    color: white;
    background-color: black;
    text-align: right;
+}
+
+footer p.accent {
+   font-weight: bold;
 }
