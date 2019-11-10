@@ -1,0 +1,66 @@
+﻿/* 
+   Murfreesboro Regional Soccer League style sheet 
+   Filename: styles.css
+
+   Author: Justin Baur  
+   Date: 11/5/2019    
+   HTML5 and CSS3 Illustrated Unit D, Independent Challenge 2
+ */
+
+/* headings */
+header {
+   text-align: center;
+   color: white;
+   background-color: green;
+}
+
+/* sidebar */
+aside {
+   background-color: lightgreen;
+}
+
+/* footer section */
+footer {
+   color: white;
+   background-color: black;
+   text-align: right;
+}
+
+/* Reset */
+article, aside, body, div, footer, header {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/*Body and page container*/
+.container {
+   max-width: 640px;
+   margin: 0 auto;
+}
+
+/* main content */
+article {
+   width: 55%;
+   float: right;
+   padding: 3%;
+}
+
+aside {
+   width: 35%;
+   float: left;
+   padding: 2%;
+}
+
+footer {
+   clear: both;
+   padding: 0.5em;
+}
+
+header {
+   padding: 0.5em;
+}
+
+aside h2 {
+   margin-bottom: 0.4em;
+}
