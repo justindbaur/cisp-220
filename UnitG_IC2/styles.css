@@ -135,6 +135,10 @@ article p.accent {
    font-weight: bold;
 }
 
+.imagemap {
+   max-width: none;
+}
+
 /* footer section */
 footer {
    padding: 0.5em;

@@ -2,8 +2,8 @@
    Murfreesboro Regional Soccer League style sheet 
    Filename: styles.css
 
-   Author:   
-   Date:     
+   Author: Justin Baur  
+   Date: 11/17/2019     
    HTML5 and CSS3 Illustrated Unit H, Independent Challenge 2
  */
 
@@ -11,7 +11,7 @@
 html {
    font-size: 14px;
 }
-article, aside, body, div, footer, header, h1, h2, h3, img, nav, p {
+article, aside, body, div, footer, header, h1, h2, h3, img, nav, p, ul, li {
    border: 0;
    padding: 0;
    margin: 0;
@@ -20,6 +20,10 @@ img {
    max-width: 100%;
    height: auto;
    width: auto;
+}
+
+ul {
+   list-style-type: none;
 }
 
 /* body and page container */
@@ -79,6 +83,11 @@ nav.sitenavigation {
    position: absolute;
    left: 0;
 }
+
+nav.sitenavigation li {
+   font-size: 1.2em;
+}
+
 nav.sitenavigation a {
    margin-bottom: 0.6em;
    padding: 0.2em;
@@ -124,6 +133,15 @@ article h3 {
 article p {
    margin: 0 0 1em 1em;
    padding-left: 7%;
+}
+
+/* main content unordered list */
+article ul {
+   margin: 0 0 1em 3em;
+   padding-left: 7%;
+   list-style-type: unset;
+
+
 }
 
 /* footer section */
