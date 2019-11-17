@@ -2,8 +2,8 @@
    Murfreesboro Regional Soccer League style sheet 
    Filename: styles.css
 
-   Author:   
-   Date:     
+   Author: Justin Baur  
+   Date: 11/17/2019    
    HTML5 and CSS3 Illustrated Unit F, Independent Challenge 2
  */
 
@@ -34,6 +34,21 @@ p {
    font-size: 1.2em;
 }
 
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px
+}
+
+p.skipnavigation a:focus {
+   left: auto;
+   top: 0.2em;
+   right: 0.2em;
+   color: black;
+   background-color: white;
+   z-index: 2;
+}
+
 /* header section */
 header {
    padding: 1em 0.5em 0.5em;
@@ -47,6 +62,41 @@ h1 {
 }
 header p {
    font-style: italic;
+}
+
+/* site navigation */
+nav.sitenavigation {
+   padding: 2%;
+   width: 25%;
+   position: absolute;
+   left: 0;
+   background-color: #c8f098;
+}
+
+nav.sitenavigation p {
+   margin-bottom: 0.6em;
+   padding: 0.2em;
+   background-color: black;
+   font-weight: bold;
+}
+
+nav.sitenavigation a {
+   color: white;
+   text-decoration: none;
+}
+
+nav.sitenavigation a:visited {
+   color: #c8f098;
+}
+
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: yellow;
+}
+
+nav.sitenavigation a:active {
+   position: relative;
+   left: 1px;
+   top: 1px;
 }
 
 /* main content */
@@ -76,6 +126,29 @@ article p.accent {
    font-weight: bold;
 }
 
+/* text navigation */
+nav.pagenavigation {
+   margin-left: 1em;
+   padding-left: 7%;
+}
+
+nav.pagenavigation p {
+   display: inline-block;
+   margin: 0.4em 0.4em 1em;
+   padding: 0.4em;
+   background-color: #c8f098;
+   border: 1px solid black;
+}
+
+nav.pagenavigation a {
+   color: black;
+   text-decoration: none;
+}
+
+nav.pagenavigation a:hover,  nav.pagenavigation a:focus {
+   color: red;
+}
+
 /* footer section */
 footer {
    padding: 0.5em;
@@ -87,6 +160,10 @@ footer {
 
 /* print styles */
 @media print {
+   article {
+      left: 0px;
+   }
+
    aside, body, .container, footer, header {
       color: #000;
       background-color: #fff;
@@ -94,6 +171,10 @@ footer {
    }
    body {
       max-width: 100%;
+   }
+
+   nav {
+      display: none;
    }
 }
 @page {
