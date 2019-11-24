@@ -2,8 +2,8 @@
    Murfreesboro Regional Soccer League style sheet 
    Filename: styles.css
 
-   Author:   
-   Date:     
+   Author: Justin Baur  
+   Date: 11/24/2019       
    HTML5 and CSS3 Illustrated Unit K, Independent Challenge 2
  */
 
@@ -65,6 +65,7 @@ header {
    padding: 1em 2% 0.5em;
    text-align: center;
    background: rgb(140,198,63);
+   background: linear-gradient(90deg, rgb(140, 198, 63), white);
    overflow: hidden;
    position: relative;
    z-index: 1;
@@ -83,6 +84,17 @@ header div {
    float: left;
    z-index: -1;
    position: relative;
+   
+}
+
+@keyframes logozoom {
+   from {
+
+   }
+
+   to {
+      
+   }
 }
 
 /* site navigation */
@@ -94,6 +106,14 @@ nav.sitenavigation {
 }
 nav.sitenavigation li {
    font-size: 1.2em;
+   transition-duration: 0.5s;
+}
+nav.sitenavigation li:hover {
+   transform: translateX(25px);
+   -webkit-transform: translateX(25px);
+   -moz-transform: translateX(25px);
+   -ms-transform: translateX(25px);
+   -o-transform: translateX(25px);
 }
 nav.sitenavigation a {
    margin-bottom: 0.6em;
@@ -163,6 +183,18 @@ fieldset {
    text-align: center;
    background: white;
 }
+.circle {
+   width: 16em;
+   height: 84%;
+   border: 10px solid white;
+   border-radius: 50%;
+   position: absolute;
+   left: -10em;
+   z-index: -1;
+}
+.no-borderradius div.circle {
+   display: none;
+}
 
 /* field styles */
 input {
@@ -170,11 +202,17 @@ input {
    padding: 0.2em;
    font-size: 1em;
 }
+input:focus {
+   background-color: #eee;
+}
 .contactinfo input {
    width: 98%;
 }
 .contactinfo label:last-of-type input {
    width: 97%;
+}
+.contactinfo input:valid {
+   background-color: #d1f4bd;
 }
 #submit {
    border: 1px solid #999;
@@ -183,6 +221,7 @@ input {
    background-color: #c8f098;
    border-radius: 0.5em;
 }
+
 
 /* label styles */
 label {
@@ -200,6 +239,10 @@ label {
 }
 .contactinfo label.score {
    width: 38%;
+}
+.contactinfo label:before {
+   content: "* ";
+   color: red;
 }
 
 /* footer section */
