@@ -84,16 +84,27 @@ header div {
    float: left;
    z-index: -1;
    position: relative;
-   
+   animation: logozoom 2s ease-out;
+   -webkit-animation: logozoom 2s ease-out;
 }
 
 @keyframes logozoom {
-   from {
-
+   0% {
+      left: 800px;
    }
 
-   to {
-      
+   100% {
+      left: 0;
+   }
+}
+
+@-webkit-keyframes logozoom {
+   0% {
+      left: 800px;
+   }
+
+   100% {
+      left: 0;
    }
 }
 
