@@ -1,0 +1,105 @@
+html {
+    font-size: 16px;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    line-height: 160%;
+}
+
+html *, html::after, html::before {
+    box-sizing: inherit;
+}
+
+a, li {
+    outline: 0;
+}
+
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles */
+.header-holder {
+    flex-shrink: 0;
+}
+
+#headerAreaHolder {
+    line-height: normal;
+    border-bottom: 1px solid gray;
+}
+
+/* helper styles */
+.nav-bar-item.has-spacing {
+    margin: 0 .5rem;
+}
+
+.has-hover-underline:hover {
+    text-decoration: underline;
+}
+
+
+/* navigation items */
+.nav-bar {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 54px;
+    min-height: 54px;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+.nav-bar-item.is-category::before {
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    border-left: 2px solid hsla(0,0%,37%,1);
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+a.nav-bar-button {
+    width: 108px;
+    height: 23px;
+    background-size: contain;
+}
+
+.nav-bar-nav {
+    display: flex;
+    align-items: stretch;
+
+}
+
+.nav-bar-nav-list {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+
+}
+
+.nav-bar-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* theme classes */
+.theme-dark {
+    background-color: hsla(0, 0%, 9%, 1) !important;
+    color: #e3e3e3 !important;
+}
+
+.theme-light {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 0%, 9%, 1);
+}

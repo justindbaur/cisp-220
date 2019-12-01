@@ -1,0 +1,65 @@
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+   <head>
+      <styling>
+         <style id="defaultCaption" tts:textAlign="center" tts:fontSize="20" tts:backgroundColor="transparent" tts:color="white" tts:fontFamily="SansSerif" tts:fontWeight="bold"/>
+      </styling>
+   </head>
+   <body>
+      <div style="defaultCaption" xml:lang="en">
+         <p begin="00:00:01.00" dur="00:00:01.90">
+            Experts tell us that kids need 60 minutes
+         </p>
+         <p begin="00:00:03.00" dur="00:00:02.90">
+            of activity a day to grow up healthy,
+         </p>
+         <p begin="00:00:06.00" dur="00:00:02.90">
+            and we know that regular physical activity boosts kids' 
+         </p>
+         <p begin="00:00:09.00" dur="00:00:03.90">
+            concentration and creativity, and is even linked to improved
+         </p>
+         <p begin="00:00:13.00" dur="00:00:01.90">
+            academic performance.
+         </p>
+         <p begin="00:00:15.00" dur="00:00:03.90">
+            Best of all, moving around is just plain fun.
+         </p>
+         <p begin="00:00:19.00" dur="00:00:03.90">
+            And one of the most fun ways to get moving is by exploring
+         </p>
+         <p begin="00:00:23.00" dur="00:00:01.90">
+            America's great outdoors.
+         </p>
+         <p begin="00:00:25.00" dur="00:00:02.90">
+            No matter where you live, there are places near you to get out
+         </p>
+         <p begin="00:00:28.00" dur="00:00:03.90">
+            and get active, from biking around your neighbor to playing
+         </p>
+         <p begin="00:00:32.00" dur="00:00:02.90">
+            tag or capture the flag in an urban park,
+         </p>
+         <p begin="00:00:35.00" dur="00:00:02.90">
+            from hiking on a mountain trail to paddling around a lake or
+         </p>
+         <p begin="00:00:38.00" dur="00:00:01.90">
+            catching an early morning wave.
+         </p>
+         <p begin="00:00:40.00" dur="00:00:04.90">
+            The great outdoors is America's first and best playground.
+         </p>
+         <p begin="00:00:45.00" dur="00:00:01.90">
+            So what are you waiting for?
+         </p>
+         <p begin="00:00:47.00" dur="00:00:03.90">
+            Grab a backpack and get moving outside with your family today.
+         </p>
+         <p begin="00:00:51.00" dur="00:00:03.90">
+            For more information on where to go and what to do outside,
+         </p>
+         <p begin="00:00:55.00" dur="00:00:04.00">
+            visit LetsMove.gov.
+         </p>
+      </div>
+   </body>
+</tt>
