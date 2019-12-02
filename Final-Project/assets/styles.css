@@ -28,6 +28,12 @@ blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html
     padding: 0;
 }
 
+.button, .delete, .file, .modal-card-close-button, .modal-close-button, .nav-bar-button, 
+.pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .tabs {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 /* header styles */
 .header-holder {
     flex-shrink: 0;
@@ -43,10 +49,43 @@ blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html
     margin: 0 .5rem;
 }
 
-.has-hover-underline:hover {
-    text-decoration: underline;
+#affixed-left-container {
+    z-index: 1;
 }
 
+.mainContainer {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.uhf-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.tree ul, ul.tree {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+.tree {
+    position: relative;
+    font-size: .875rem;
+}
+.is-flex-column {
+    flex-direction: column;
+}
+
+.is-fixed {
+    position: fixed;
+}
+
+.is-flex {
+    display: flex !important;
+}
+.has-top-padding.uhf-container {
+    padding-top: 1.5rem;
+}
 
 /* navigation items */
 .nav-bar {
@@ -67,10 +106,30 @@ blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html
     margin-left: .5rem;
     margin-right: 1rem;
 }
+.nav-bar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width: 54px;
+    padding: 0 .5rem;
+    background-color: transparent;
+    color: white;
+    text-decoration: none !important;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    line-height: normal;
+    cursor: pointer;
+    outline-offset: -.125rem !important;
+}
+
+.has-hover-underline:hover {
+    text-decoration: underline;
+}
 
 a.nav-bar-button {
-    width: 108px;
-    height: 23px;
     background-size: contain;
 }
 
@@ -102,4 +161,10 @@ a.nav-bar-button {
 .theme-light {
     background-color: hsla(0, 0%, 100%, 1);
     color: hsla(0, 0%, 9%, 1);
+}
+
+@media print, screen and (min-width: 1084px) {
+    .uhf-container:not(.has-padding) {
+        max-width: calc(100% - 10vw);
+    }
 }

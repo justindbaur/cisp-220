@@ -10,7 +10,7 @@
          Author:   
          Date:     
       -->
-   <link rel="stylesheet" href="assets\styles.css">
+   <link rel="stylesheet" href="assets\otherstyles.css">
 </head>
 
 <body class="theme-dark">
@@ -25,9 +25,7 @@
 
             </nav> -->
             <a class="nav-bar-button" href="#">
-               <div>
-
-               </div>
+               <div class="nav-bar-logo has-background-image theme-display is-dark"></div>
             </a>
             <nav class="nav-bar-nav" role="navigation">
                <ul class="nav-bar-nav-list">
@@ -37,34 +35,69 @@
                      </a>
                   </li>
                   <li class="nav-bar-item">
-                     <a href="#">About</a>
+                     <a class="nav-bar-button has-hover-underline" href="#">
+                        <span>About</span>
+                     </a>
                   </li>
-                  <li class="nav-bar-item">Learn</li>
-                  <li class="nav-bar-item">Architecture</li>
-                  <li class="nav-bar-item">Docs</li>
-                  <li class="nav-bar-item">Downloads</li>
+                  <li class="nav-bar-item">
+                     <a class="nav-bar-button has-hover-underline" href="#">
+                        <span>Learn</span>
+                     </a>
+                  </li>
+                  <li class="nav-bar-item">
+                     <a class="nav-bar-button has-hover-underline" href="#">
+                        <span>Architecture</span>
+                     </a>
+                  </li>
+                  <li class="nav-bar-item">
+                     <a class="nav-bar-button has-hover-underline" href="#">
+                        <span>Docs</span>
+                     </a>
+                  </li>
+                  <li class="nav-bar-item">
+                     <a class="nav-bar-button has-hover-underline" href="#">
+                        <span>Downloads</span>
+                     </a>
+                  </li>
                </ul>
             </nav>
          </header>
       </div>
    </div>
-   <div class="mainContainer">
-      <div class="columns">
-         <div class="left-container">
-
+   <div class="mainContainer uhf-container has-top-padding has-default-focus">
+      <div class="columns has-large-gaps">
+         <div id="left-container" class="left-container is-hidden-mobile column">
+            <nav id="affixed-left-container">
+               <ul class="tree is-vertically-scrollable has-flex-grow has-flex-shrink" role="tree"
+                  style="width: 354px; top: 24px; bottom: 24px;">
+                  <li role="none">
+                     C# Documentation
+                  </li>
+               </ul>
+            </nav>
          </div>
-         <section class="primary-holder">
-            <div id="main" class="main-column">
-
-            </div>
-            <div class="page-actions">
-
+         <section class="primary-holder is-two-thirds-tablet is-three-quarters-desktop">
+            <div class="columns is-gapless-mobile has-large-gaps">
+               <div id="main-column" class="column is-full is-four-fifths-desktop">
+                  <main id="main" class="content">
+                     <h1>This is a header</h1>
+                  </main>
+               </div>
+               <div id="page-actions"
+                  class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only">
+                  <div id="affixed-right-container" class="doc-outline is-fixed is-vertically-scrollable"
+                     style="width: 186px; top: 111.5px; bottom: 24px;">
+                     <nav id="side-doc-outline" role="navigation">
+                        <h3>This</h3>
+                     </nav>
+                  </div>
+               </div>
             </div>
          </section>
       </div>
    </div>
    <div class="footerContainer">
-      
+
    </div>
 </body>
 
