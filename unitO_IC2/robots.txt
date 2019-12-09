@@ -1,0 +1,3 @@
+# Group 1
+User-agent: *
+Disallow: http://www.example.com/signup.html
