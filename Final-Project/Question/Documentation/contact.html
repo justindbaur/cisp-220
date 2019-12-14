@@ -51,8 +51,8 @@
                      </a>
                   </li>
                   <li class="nav-bar-item">
-                     <a class="nav-bar-button has-hover-underline" href="../../Question/Documentation/info.html">
-                        <span>Docs</span>
+                     <a class="nav-bar-button has-hover-underline" href="../Question/Documentation/contact.html">
+                        <span>Contact</span>
                      </a>
                   </li>
                </ul>
@@ -77,13 +77,16 @@
             <div class="columns is-gapless-mobile has-large-gaps">
                <div id="main-column" class="column is-full is-four-fifths-desktop">
                   <main id="main" class="content">
-                     <h1>Learn C#</h1>
-                     <h3>Ask a question, answer a question, browse tips and tricks.</h3>
-                     <p>To get started with this application, you can choose the action you want to do from the list below or choose from the top nav bar whenever you want!</p>
-                     <div class="codeHeader">
-                        <span class="language">C#</span>
-                     </div>
-                     <pre class="has-inner-focus"><code class="lang-csharp" >Console.WriteLine(<span class="hljs-string">"Hello World!"</span>);</code></pre>
+                     <h1>Contact Us</h1>
+                     <form method="POST" name="contactform" action="contact1.php">
+                        <input class="input has-margin-bottom-small" type="text" placeholder="First Name" id="first_name" />
+                        <input class="input has-margin-bottom-small" type="text" placeholder="Last Name" id="last_name" />
+                        <input class="input has-margin-bottom-small" type="email" placeholder="Email" id="email"/>
+                        <textarea class="textarea is-radiusless has-margin-bottom-small" rows="6" placeholder="Leave a comment" id="comments">
+
+                        </textarea>
+                        <button type="submit" name="submit" value="Submit" class="button is-primary">Submit</button>
+                     </form>
                   </main>
                </div>
                <div id="page-actions" class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" role="complementary">
