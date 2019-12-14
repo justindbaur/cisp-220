@@ -18480,7 +18480,7 @@ html.ap-layout-finished .content-header-controls {
 .metadata.page-metadata>li:not(:last-of-type):not(:only-of-type):after {
     padding-left: 5px;
     padding-right: 5px;
-    content: "â€¢"
+    content: "•"
 }
 
 .metadata.page-metadata>li:first-of-type,.metadata.page-metadata>li:only-of-type {

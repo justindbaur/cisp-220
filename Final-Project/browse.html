@@ -12,9 +12,10 @@
          Date:     
       -->
    <link rel="stylesheet" href="../assets/otherstyles.css">
+   <script type="text/javascript" src="assets/script.js"></script>
 </head>
 
-<body class="theme-dark">
+<body class="theme-dark" onload="getSortType()">
    <div class="header-holder">
       <!-- <a href="#main">Skip to main content</a> -->
       <div id="headerAreaHolder">
@@ -77,11 +78,26 @@
             <div class="columns is-gapless-mobile has-large-gaps">
                <div id="main-column" class="column is-full is-four-fifths-desktop">
                   <main id="main" class="content">
-                     <h1>Welcome to Q-n-A</h1>
+                     <h1>Browse Questions</h1>
+                     <br>
+                     <select id="sortType">
+                        <option>None</option>
+                        <option>New</option>
+                        <option>Popular</option>
+                        <option>Hot</option>
+                     </select>
+                     <br>
                      <div class="box has-box-shadow-medium has-margin-none has-margin-small-desktop">
                         <h2 class="has-margin-none is-size-4"><a href="../../Question/post.html">Beginner Question!</a></h2>
-                        <h4>I have a few questions about this video I just watched</h4>
-                        
+                        <h4 class="has-margin-none">I have a few questions about this video I just watched</h4>
+                        <ul class="metadata page-metadata">
+                           <li class="displayDate">
+                              <time>08/20/2019</time>      
+                           </li>
+                           <li class="readingTime">
+                              5 Points
+                           </li>
+                        </ul>
                      </div>
                   </main>
                </div>
