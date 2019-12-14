@@ -23,7 +23,7 @@
  */
 
 window.Modernizr = (function( window, document, undefined ) {
-
+    console.log("Modernizer");
     var version = '2.8.3',
 
     Modernizr = {},
@@ -95,7 +95,7 @@ window.Modernizr = (function( window, document, undefined ) {
     /*>>teststyles*/
     // Inject element with style element and some CSS rules
     injectElementWithStyles = function( rule, callback, nodes, testnames ) {
-
+      console.log("inject element with styles");
       var style, ret, node, docOverflow,
           div = document.createElement('div'),
           // After page load injecting a fake body doesn't work so check if body exists
@@ -153,7 +153,7 @@ window.Modernizr = (function( window, document, undefined ) {
     // by Scott Jehl and Paul Irish
     // gist.github.com/786768
     testMediaQuery = function( mq ) {
-
+      console.log("test media query");
       var matchMedia = window.matchMedia || window.msMatchMedia;
       if ( matchMedia ) {
         return matchMedia(mq) && matchMedia(mq).matches || false;
@@ -183,7 +183,7 @@ window.Modernizr = (function( window, document, undefined ) {
     //   Modernizr.hasEvent("textInput") // in Webkit. github.com/Modernizr/Modernizr/issues/333
     //   ...
     isEventSupported = (function() {
-
+      console.log("is event supported");
       var TAGNAMES = {
         'select': 'input', 'change': 'input',
         'submit': 'form', 'reset': 'form',
@@ -287,6 +287,7 @@ window.Modernizr = (function( window, document, undefined ) {
      * setCss applies given styles to the Modernizr DOM node.
      */
     function setCss( str ) {
+      console.log("set css");
         mStyle.cssText = str;
     }
 
@@ -294,6 +295,7 @@ window.Modernizr = (function( window, document, undefined ) {
      * setCssAll extrapolates all vendor-specific css strings.
      */
     function setCssAll( str1, str2 ) {
+      console.log("set css all");
         return setCss(prefixes.join(str1 + ';') + ( str2 || '' ));
     }
 
@@ -301,6 +303,7 @@ window.Modernizr = (function( window, document, undefined ) {
      * is returns a boolean for if typeof obj is exactly type.
      */
     function is( obj, type ) {
+      console.log("is");
         return typeof obj === type;
     }
 
@@ -308,6 +311,7 @@ window.Modernizr = (function( window, document, undefined ) {
      * contains returns a boolean for if substr is found within str.
      */
     function contains( str, substr ) {
+      console.log("contains");
         return !!~('' + str).indexOf(substr);
     }
 
@@ -332,6 +336,7 @@ window.Modernizr = (function( window, document, undefined ) {
     // browser-specific content by accident.
 
     function testProps( props, prefixed ) {
+      console.log("test props");
         for ( var i in props ) {
             var prop = props[i];
             if ( !contains(prop, "-") && mStyle[prop] !== undefined ) {
@@ -348,6 +353,7 @@ window.Modernizr = (function( window, document, undefined ) {
      *   a certain property, it won't return undefined for it.
      */
     function testDOMProps( props, obj, elem ) {
+      console.log("test dom props")
         for ( var i in props ) {
             var item = obj[props[i]];
             if ( item !== undefined) {
@@ -376,7 +382,7 @@ window.Modernizr = (function( window, document, undefined ) {
      *   compatibility.
      */
     function testPropsAll( prop, prefixed, elem ) {
-
+      console.log("test props all")
         var ucProp  = prop.charAt(0).toUpperCase() + prop.slice(1),
             props   = (prop + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
 
