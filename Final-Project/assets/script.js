@@ -1,3 +1,9 @@
+// Author: Justin Baur   
+// Date: 12/14/2019
+
+
+
+
 // Gets the value from the query string by it's name
 function getQueryVariable(variable) {
     let query = window.location.search.substring(1);
