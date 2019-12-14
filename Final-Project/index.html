@@ -11,7 +11,7 @@
          Author:   
          Date:     
       -->
-   <link rel="stylesheet" href="assets\otherstyles.css">
+   <link rel="stylesheet" href="../../assets/otherstyles.css">
 </head>
 
 <body class="theme-dark">
@@ -25,45 +25,39 @@
                <span></span>
             </button>
             
-            <a class="nav-bar-button" href="#">
-               <div class="nav-bar-logo has-background-image theme-display is-dark"></div>
+            <a class="nav-bar-button" href="../index.html">
+               <div class="theme-display is-dark">Q-n-A</div>
             </a>
             <nav class="nav-bar-nav" role="navigation">
                <ul class="nav-bar-nav-list">
                   <li class="nav-bar-item has-spacing is-category">
-                     <a class="nav-bar-button title has-hover-underline is-4">
-                        <span>.NET</span>
+                     <a class="nav-bar-button title has-hover-underline is-4" href="../Question/question.html">
+                        <span>Ask</span>
                      </a>
                   </li>
                   <li class="nav-bar-item">
-                     <a class="nav-bar-button has-hover-underline" href="#">
-                        <span>About</span>
+                     <a class="nav-bar-button has-hover-underline" href="../browse.html">
+                        <span>Browse</span>
                      </a>
                   </li>
                   <li class="nav-bar-item">
-                     <a class="nav-bar-button has-hover-underline" href="#">
-                        <span>Learn</span>
+                     <a class="nav-bar-button has-hover-underline" href="../browse.html?sort=new">
+                        <span>New</span>
                      </a>
                   </li>
                   <li class="nav-bar-item">
-                     <a class="nav-bar-button has-hover-underline" href="#">
-                        <span>Architecture</span>
+                     <a class="nav-bar-button has-hover-underline" href="../browse.html?sort=popular">
+                        <span>Popular</span>
                      </a>
                   </li>
                   <li class="nav-bar-item">
-                     <a class="nav-bar-button has-hover-underline" href="#">
+                     <a class="nav-bar-button has-hover-underline" href="../Question/Documentation/info.html">
                         <span>Docs</span>
-                     </a>
-                  </li>
-                  <li class="nav-bar-item">
-                     <a class="nav-bar-button has-hover-underline" href="#">
-                        <span>Downloads</span>
                      </a>
                   </li>
                </ul>
             </nav>
             <span class="nav-bar-spacer"></span>
-
          </header>
       </div>
    </div>
@@ -74,22 +68,35 @@
                <ul class="tree is-vertically-scrollable has-flex-grow has-flex-shrink" role="tree"
                   style="width: 354px; top: 24px; bottom: 24px;">
                   <li role="none">
-                     C# Documentation
+                     <a href="#" class="tree-item is-leaf">C# Documentation</a>
                   </li>
                </ul>
             </nav>
          </div>
-         <section class="primary-holder is-two-thirds-tablet is-three-quarters-desktop">
+         <section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
             <div class="columns is-gapless-mobile has-large-gaps">
                <div id="main-column" class="column is-full is-four-fifths-desktop">
                   <main id="main" class="content">
-                     <h1>This is a header</h1>
+                     <h1>Welcome to Q-n-A</h1>
+                     <h3>Ask a question, answer a question, browse tips and tricks.</h3>
+                     <p>To get started with this application, you can choose the action you want to do from the list below or choose from the top nav bar whenever you want!</p>
+                     <ul>
+                        <li><a href="#">Ask</a></li>
+                        <li><a href="./browse.html">Browse</a>
+                           <ul>
+                              <li><a href="../browse.html?sort=new">New</a></li>
+                              <li><a href="../browse.html?sort=popular">Popular</a></li>
+                              <li><a href="../browse.html?sort=hot">Hot</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="./Question/Documentation/info.html">Docs</a></li>
+                     </ul>
                   </main>
                </div>
                <div id="page-actions" class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" role="complementary">
                   <div id="affixed-right-container" class="doc-outline is-fixed is-vertically-scrollable" style="width: 186px; top: 111.5px; bottom: 24px;">
                      <nav id="side-doc-outline" role="navigation">
-                        <h3>This</h3>
+                        <h3>Related Items</h3>
                         <ol>
                            <li class="selected"><a href="#">Item 1</a></li>
                            <li class=""><a href="#">Item 2</a></li>
